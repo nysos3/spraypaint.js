@@ -578,7 +578,7 @@ export class SpraypaintBase {
       this.listen()
     }
     this._originalAttributes = cloneDeep(this._attributes)
-    if (!!this.relationships) {
+    if (this.relationships) {
       this._originalRelationships = this.relationshipResourceIdentifiers(
         Object.keys(this.relationships)
       )
